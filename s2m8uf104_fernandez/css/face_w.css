@@ -1,3 +1,6 @@
+/* Versió Escriptori */
+
+      @media only screen and (min-width: 960px) {
 
 body{
   margin: 0;
@@ -413,3 +416,285 @@ margin-left: 30px;
 
 #mes{
   list-style-image: none;}
+
+}
+
+
+/* Versió Mòbil */
+
+      @media screen and (max-width: 960px) {
+
+body{
+margin: 0;
+padding: 0;
+background-color: #f5f5f7;
+font-family: Helvetica;
+}
+
+#principal {
+margin-top:262px;
+}
+
+#principal  li{
+list-style-type: none;
+
+}
+
+#contingut {
+
+}
+
+#contingut #cap{
+height: 254px;
+background-image: url(../img/herba.png);
+background-repeat: no-repeat;
+background-size: 100% auto;
+text-align: center;
+}
+
+#contingut #cap img{
+width: 162px;
+
+
+height: 162px;
+border-radius: 50%;
+border: solid white 3px;
+text-align: center;
+margin-top: 173px;
+}
+
+#contingut #cap h3{
+  font-size: 28px;
+  font-weight: 200;
+}
+
+#contingut #menu {
+  visibility: hidden;
+}
+
+.estudis{
+  list-style-image: url(../iconetes/icones_feina.png);
+}
+.domicili{
+  list-style-image: url(../iconetes/icones_domicili.png);
+}
+.neixement{
+  list-style-image: url(../iconetes/icones_ubicacio.png);
+}
+
+h3{
+}
+
+
+
+aside{
+
+}
+
+#seccions{
+}
+
+.dreta{
+
+}
+
+.esquerra{
+
+}
+
+.dreta{
+
+}
+
+.esquerra li, .dreta li{
+}
+
+.esquerra, .dreta{
+
+}
+
+.esquerra h3{
+
+}
+
+#amistats h3 {
+
+}
+
+#amistats ul{
+
+}
+
+#amistats li{
+
+}
+
+#fotos ul{
+
+}
+
+#fotos li{
+
+}
+
+#AC{
+background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
+}
+#MM {
+background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+}
+#PS {
+background-image: url(https://psanz2019crn.github.io/M08/s2m8uf104_sanz/img/aoperfil.gif);
+}
+#SM {
+background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
+}
+#AG {
+background-image: url(https://agarcia2019crn.github.io/M08/s2m8uf104_garciaa/img/perfil.jpg);
+}
+#GM {
+background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg);
+}
+#SP {
+background-image: url(https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg);
+}
+#VH {
+background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+}
+#OP {
+background-image: url(https://oparicio2019crn.github.io/M08/UF1/s2m8uf104_oparicio/img/perfil.png);
+}
+
+#amistats h3 {
+}
+
+#fotos h3 {
+
+}
+
+#suprise h3 {
+}
+
+
+#presentacio li{
+list-style-type: none;
+width: 60%;
+font-size: 15px;
+margin: 0 auto;
+color: grey;
+}
+
+#amistats a:link{
+
+}
+
+#amistats a:visited{
+
+}
+
+.estudis{
+list-style-image: url(../iconetes/icones_feina.png);
+}
+
+#crear{
+
+}
+
+
+#crear li{
+
+}
+
+#estat{
+
+}
+
+#pensament{
+
+}
+
+#miniperfil{
+
+}
+
+
+
+#botonera_estat{
+
+}
+
+#botonera_estat li{
+
+}
+
+#estat_fotovideo{
+
+}
+
+#estat_etiquetar{
+
+}
+
+
+#estat_sentiment{
+
+}
+
+#botonera_estat li:hover{
+}
+
+#publica{
+}
+
+.entrada{
+}
+
+.entrada h4{
+height: 40px;
+}
+
+.entrada h4 span{
+color: blue;
+}
+
+.entrada h5{
+color: grey;
+}
+
+.entrada p{
+}
+
+.entrada h6{
+text-indent: 20px;
+background-image: url(../img/like.jpg)
+border bottom: 1px solid grey;
+}
+
+.entrada ul{
+
+}
+
+.entrada ul li{
+list-style-image: url(../img/like_icona.jpg);
+
+}
+
+.entrada input {
+
+}
+
+#agrada{
+
+}
+
+#comenta{
+list-style-image: url(../img/coment_icona.jpg);}
+
+#comparteix{
+list-style-image: url(../img/compartir_icona.jpg);}
+
+#mes{
+list-style-image: none;}
+
+
+      }
