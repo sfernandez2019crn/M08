@@ -84,6 +84,17 @@ overflow: visible;
     text-indent: 24px;
   }
 
+  .estudis{
+    list-style-image: url(../iconetes/icones_feina.png);
+  }
+  .domicili{
+    list-style-image: url(../iconetes/icones_domicili.png);
+  }
+  .neixement{
+    list-style-image: url(../iconetes/icones_ubicacio.png);
+  }
+
+
   li{
   float: left;
   list-style: none;
@@ -517,16 +528,26 @@ aside{
 
 }
 
+
 #amistats h3 {
+  background-position: 0px;
+
 
 }
-
 #amistats ul{
 
 }
 
 #amistats li{
-
+  border-radius: 7px;
+  width: 100px;
+  height:100px;
+  overflow: visible;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background-size: cover;
+  text-align: center;
 }
 
 #fotos ul{
