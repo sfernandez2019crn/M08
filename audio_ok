@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es" manifes="cache.manifest">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-capable" contente="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleble=no">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <link rel="icon" sizes="512x512" href="img/icon.png">
+    <link rel="apple-touch-zicon" sizes="192x192" href="img/icon.png">
+
+    <title></title>
+
+    <style>
+    body {
+      text-align: center;
+    margin: auto;
+    padding: inherit;
+  background-color: black;
+    }
+    #contenidor {
+      width: 500px;
+      height: auto;
+
+      }
+
+    .cover {
+
+      -webkit-filter: blur(6px);
+      width: 500px;
+      height: 802px;
+      background: url(HTSD.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top:-1170px;
+      z-index: -100;
+    }
+#barra{
+  margin-top: 500px;
+}
+    .info {
+      width: 300px;
+      height: 48px;
+      position: relative;
+      background: black;
+      top: 475px;
+      left: 100px;
+      opacity: 0.7;
+    }
+p{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  font-family: helvetica;
+  text-align: center;
+  padding-top: 13px;
+  opacity: 1;
+  z-index: 1000
+}
+
+    /* --------------- Tiradors ----------------- */
+
+    input[type=range] {
+      -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+      width: 100%; /* Firefox necessita una amplada específica */
+      background: transparent;  /* Amaga el tirador per fer la màgia */
+      background: rgba(255,255,255, 0.2);
+      margin: 0.0px 0;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+    input[type=range]:focus {
+      outline: none; /* Per no veure el contorn */
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 20px;
+      height: 10px;
+      cursor: pointer;
+      /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+      background: black;
+      border-radius: 10px;
+      border: 0px solid #010101;
+    }
+
+    /* Controlador */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      background: rgba(255,255,255, 0.3);
+      cursor: pointer;
+      margin-top: -0.0px;
+      box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+      border: 0px solid #ff1e00;
+    }
+
+    /*  opcional  */
+    /*
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: red;
+      border-radius: 10px;
+    }
+    */
+
+
+    /* --------------- Botons ----------------- */
+
+    #playpause {
+      position:relative;
+      border: none;
+      text-decoration:none;
+      width: 100px;
+      height: 100px;
+      background: none;
+      border-radius: 50px;
+      opacity: 0.7;
+      z-index: 100000000;
+    }
+
+    #playpause:focus {
+      outline: none; /* Per no veure el contorn */
+    }
+    #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+      position: absolute;
+      content: " ";
+      z-index: 100000000;
+    }
+    #playpause:before, #playpause:after {
+      height: 47px;
+      width: 19px;
+      left: 29px;
+      top: 5px;
+      display: block;
+      background: black;
+      opacity: 0.7;
+      z-index: 100000000;
+
+    }
+
+    #playpause:after {
+     left: 54px;
+     z-index: 100000000;
+
+    }
+
+    #playpause:focus:before {
+      top: 1px;
+      left: 34px;
+      width: 0;
+      height: 0;
+      border-left: 47px solid black;
+      opacity: 0.7;
+      border-right: 24px solid transparent;
+      border-bottom: 24px solid transparent;
+      border-top: 24px solid transparent;
+      display: block;
+      background: transparent;
+      z-index: 100000000;
+
+    }
+
+    #playpause:focus:after {
+     visibility:hidden;
+     z-index: 100000000;
+
+    }
+
+    .fwd{
+      background:  url(fwd.svg);
+      width: 30px;
+      height: 30px;
+      text-decoration:none;
+      background-repeat: no-repeat;
+      margin-left: 40px;
+      border: none;
+      position: absolute;
+      margin-top: 10px;
+      opacity: 0.7;
+      z-index: 100000000;
+
+    }
+        .bck{
+          background:  url(bck.svg);
+          width: 30px;
+          height: 30px;
+          text-decoration:none;
+          background-repeat: no-repeat;
+          border: none;
+          margin-left: -60px;
+          margin-top: 10px;
+          position: absolute;
+          opacity: 0.7;
+          z-index: 100000000;
+
+        }
+
+        #barra2{
+          height: 150px;
+          width: auto;
+          background-color: white;
+          opacity: 0.5;
+          position: relative;
+          padding-top: 20px;
+          top: -360px;
+
+        }
+        #caratula{
+          background-image: url(HTSD.jpeg);
+          background-size:  cover;
+          height: 400px;
+          width: 400px;
+          margin: auto;
+          position:  relative;
+        }
+
+        #titulo{
+          position: relative;
+
+        }
+    </style>
+  </head>
+  <body>
+
+    <div id="contenidor">
+
+
+      <div class="info">
+      <p id="titulo">Hardwired</p>
+      </div>
+      <div id="carril"></div>
+<div id="caratula">
+</div>
+      <div class="botons">
+        <input id="barra" type="range" min="0" max="" value="0" step="0.01">
+        <div id="barra2">
+        <audio id="reproduint" autoplay="1" width="500" height="40" src="1_Hardwired.mp3" type="audio/mp3"></audio>
+
+
+        <button onclick="bckmusic()"class="bck"></button>
+        <button id="playpause"></button>
+        <button onclick="fwdmusic()" class="fwd"> </button>
+
+
+</div>
+</div>
+<div class="cover">
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+<script>
+var reproduint, playpause, barra;
+var vesa, noutemps;
+
+function inicialitzaReproductor() {
+  reproduint = document.getElementById("reproduint");
+  playpause = document.getElementById("playpause");
+  barra = document.getElementById("barra");
+
+  playpause.addEventListener("click", playPause, false);
+  barra.addEventListener("change", posicioAudio, false);
+  reproduint.addEventListener("timeupdate", actualitzaTemps, false);
+
+  playpause.focus();
+
+}
+
+window.onload = inicialitzaReproductor;
+
+function playPause() {
+  if(reproduint.paused) {
+    reproduint.play();
+    playpause.blur();
+  }
+  else {
+    reproduint.pause();
+    playpause.focus();
+  }
+}
+
+
+function posicioAudio() {
+  var vesa = reproduint.duration * (barra.value / 100);
+  reproduint.currentTime = vesa;
+  console.log(reproduint.currentTime);
+}
+
+function actualitzaTemps() {
+  var noutemps = reproduint.currentTime * (100 / reproduint.duration);
+  barra.value = noutemps;
+  console.log(barra.value);
+}
+
+
+var songz=['1_Hardwired.mp3','2_AtlasRise.mp3','3_NowThatWeareDead.mp3','4_Moth Into Flame.mp3','5_Dream No More.mp3','6_Halo On Fire.mp3','7_Confusion.mp3','8_ManUNkind.mp3','9_Here Comes Revenge.mp3','10_Am I Savage.mp3','11_Murder One.mp3','12_Spit Out The Bone.mp3',];
+
+var titol=[ 'Hardwired','Atlas Rise', 'Now That Weare Dead','Moth Into Flame', 'Dream No More','Halo On Fire', 'Confusion','ManUNkind', 'Here Comes Revenge','Am I Savage', 'Murder One','Spit Out The Bone'];
+
+
+
+var i=0;
+
+function fwdmusic(){
+  if (i==songz.length-1) {i=0;} else {i++;}
+document.getElementById('reproduint').src=songz[i];
+document.getElementById('titulo').innerHTML=titol[i];
+
+}
+function bckmusic(){
+  if (i==0) {i=songz.length-1;} else {i--;}
+document.getElementById('reproduint').src=songz[i];
+
+}
+
+document.getElementsByClassName('fwdmusic').addEventListener('click',fwdmusic);
+document.getElementsByClassName('bckmusic').addEventListener('click',bckmusic);
+</script>
